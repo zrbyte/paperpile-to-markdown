@@ -1,16 +1,21 @@
 """pp2md.py - Convert Paperpile JSON to Markdown files.
 
-This script searches for a JSON file in the same directory as the
-script, loads it and a markdown template, then creates a markdown file
-for each entry in the JSON. Each field marked with double braces in the
-template is replaced with information from the JSON entry.
+The script loads a Paperpile export JSON and a markdown template, then
+creates a markdown file for each entry. The template tokens wrapped in
+double braces are replaced with the values from the JSON entry.
+
+When executed without arguments the script searches for ``*.json`` next
+to itself. File paths passed as arguments are also supported which makes
+it easy to use from macOS Quick Actions where the selected file path can
+be supplied to the script.
 """
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, Iterable, List
+import sys
 
 
 def load_json(path: Path) -> List[Dict[str, Any]]:
@@ -67,26 +72,36 @@ def replace_fields(template: str, entry: Dict[str, Any]) -> str:
     return template
 
 
-def main() -> None:
-    here = Path(__file__).resolve().parent
-
-    json_files = list(here.glob("*.json"))
-    if not json_files:
-        raise FileNotFoundError("No JSON file found next to script.")
-    json_path = json_files[0]
-
-    template_path = here / "paper-template.md"
-    if not template_path.exists():
-        raise FileNotFoundError("Template file not found.")
-
+def process_json(json_path: Path, template: str) -> None:
+    """Create markdown files for the data in *json_path* using *template*."""
     data = load_json(json_path)
-    template = load_template(template_path)
-
+    out_dir = json_path.parent
     for entry in data:
         output = replace_fields(template, entry)
         citekey = entry.get("citekey", "paper")
         filename = f"{citekey[:-2]}.md"
-        (here / filename).write_text(output, encoding="utf-8")
+        (out_dir / filename).write_text(output, encoding="utf-8")
+
+
+def main(args: Iterable[str] | None = None) -> None:
+    script_dir = Path(__file__).resolve().parent
+    template_path = script_dir / "paper-template.md"
+    if not template_path.exists():
+        raise FileNotFoundError("Template file not found.")
+
+    if args is None:
+        args = sys.argv[1:]
+    json_paths = [Path(p) for p in args] if args else []
+    if not json_paths:
+        json_paths = list(script_dir.glob("*.json"))
+        if not json_paths:
+            raise FileNotFoundError("No JSON file provided or found next to script.")
+
+    template = load_template(template_path)
+
+    for path in json_paths:
+        if path.exists():
+            process_json(path, template)
 
 
 if __name__ == "__main__":
