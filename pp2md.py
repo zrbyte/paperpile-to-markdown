@@ -84,6 +84,7 @@ def process_json(json_path: Path, template: str) -> None:
 
 
 def main(args: Iterable[str] | None = None) -> None:
+    """Main function to execute the script."""
     script_dir = Path(__file__).resolve().parent
     template_path = script_dir / "paper-template.md"
     if not template_path.exists():
