@@ -1,0 +1,330 @@
+[
+  {
+    "_id": "41309bfc-65b6-08c9-9549-7874c768dbdb",
+    "abstract": "Polarons are quasiparticles that arise from the interaction of electrons or holes with lattice vibrations. Though polarons are well studied across multiple disciplines, experimental observations of polarons in two-dimensional crystals are sparse. We use scanning tunneling microscopy and spectroscopy to measure inelastic excitations of polaronic bound states emerging from coupling of nonpolar zone-boundary phonons to Bloch electrons in n-doped metallic single-layer MoS2. The latter is kept chemically pristine via contactless chemical doping. Tunneling into the vibrationally coupled polaronic states leads to a series of evenly spaced peaks in the differential conductance on either side of the Fermi level. Combining density functional (perturbation) theory with a recently developed electron-lattice downfolding technique, we show that the energy spacing stems from the longitudinal-acoustic phonon mode that flattens at the Brillouin zone edge and is responsible for the formation of stable multipolarons in metallic MoS2.",
+    "attachments": [
+      {
+        "_id": "5977418e-c22f-4d1b-808a-7e8d846ba920",
+        "mimeType": "application/pdf",
+        "pub_id": "41309bfc-65b6-08c9-9549-7874c768dbdb",
+        "source_filename": "l8lg-ny6m.pdf",
+        "filename": "All Papers/2025/van Efferen et al. 2025 - Inelastic tunneling into multipolaronic bound states in single-layer MoS2.pdf",
+        "md5": "75f4643b210e492e373dcd6917a0c6ed",
+        "article_pdf": 1,
+        "filesize": 13514349,
+        "created": 1753950749.796,
+        "s3_md5": "75f4643b210e492e373dcd6917a0c6ed",
+        "gdrive_id": "1JZqLtDn-ZO-BovpZ3WRQ7H7R7qNaPf4A"
+      }
+    ],
+    "author": [
+      {
+        "last": "van Efferen",
+        "first": "Camiel",
+        "initials": "C",
+        "formatted": "van Efferen C"
+      },
+      {
+        "last": "Pätzold",
+        "first": "Laura",
+        "orcid": "0009-0009-6554-6198",
+        "initials": "L",
+        "formatted": "Pätzold L"
+      },
+      {
+        "last": "Tounsi",
+        "first": "Tfyeche Y",
+        "orcid": "0009-0006-9434-7372",
+        "initials": "TY",
+        "formatted": "Tounsi TY"
+      },
+      {
+        "last": "Schobert",
+        "first": "Arne",
+        "orcid": "0000-0003-1363-6342",
+        "initials": "A",
+        "formatted": "Schobert A"
+      },
+      {
+        "last": "Winter",
+        "first": "Michael",
+        "orcid": "0000-0001-7260-0417",
+        "initials": "M",
+        "formatted": "Winter M"
+      },
+      {
+        "last": "'t Veld",
+        "first": "Yann in",
+        "orcid": "0009-0009-7467-6920",
+        "initials": "Yin",
+        "formatted": "'t Veld Yin"
+      },
+      {
+        "last": "Georger",
+        "first": "Mark",
+        "initials": "M",
+        "formatted": "Georger M"
+      },
+      {
+        "last": "Safeer",
+        "first": "Affan",
+        "orcid": "0000-0002-6882-0596",
+        "initials": "A",
+        "formatted": "Safeer A"
+      },
+      {
+        "last": "Krämer",
+        "first": "Christian",
+        "initials": "C",
+        "formatted": "Krämer C"
+      },
+      {
+        "last": "Fischer",
+        "first": "Jeison",
+        "orcid": "0000-0003-3538-1926",
+        "initials": "J",
+        "formatted": "Fischer J"
+      },
+      {
+        "last": "Berges",
+        "first": "Jan",
+        "orcid": "0000-0001-7041-2906",
+        "initials": "J",
+        "formatted": "Berges J"
+      },
+      {
+        "last": "Michely",
+        "first": "Thomas",
+        "orcid": "0000-0003-1657-1847",
+        "initials": "T",
+        "formatted": "Michely T"
+      },
+      {
+        "last": "Mozara",
+        "first": "Roberto",
+        "orcid": "0009-0007-1795-7553",
+        "initials": "R",
+        "formatted": "Mozara R"
+      },
+      {
+        "last": "Wehling",
+        "first": "Tim",
+        "orcid": "0000-0002-5579-2231",
+        "initials": "T",
+        "formatted": "Wehling T"
+      },
+      {
+        "last": "Jolie",
+        "first": "Wouter",
+        "orcid": "0000-0001-9319-3427",
+        "initials": "W",
+        "formatted": "Jolie W"
+      }
+    ],
+    "autoCleaned": 1,
+    "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1103/l8lg-ny6m",
+    "citekey": "van-Efferen2025-ra",
+    "copyright": "https://creativecommons.org/licenses/by/4.0/",
+    "created": 1753950747.252,
+    "doi": "10.1103/l8lg-ny6m",
+    "dup_sha1": "c90ba077cf46a43be76c3ab565e42256dd46d0f7",
+    "folders": [],
+    "id_list": [
+      "sha1:6645abf4b42116e8f82f0217fdf8db4811cf3bc4",
+      "dup_sha1:c90ba077cf46a43be76c3ab565e42256dd46d0f7",
+      "doi:10.1103/l8lg-ny6m",
+      "url:http://dx.doi.org/10.1103/l8lg-ny6m",
+      "url:https://link.aps.org/doi/10.1103/l8lg-ny6m",
+      "url:https://journals.aps.org/prx/pdf/10.1103/l8lg-ny6m"
+    ],
+    "incomplete": 0,
+    "issn": "2160-3308",
+    "issue": "3",
+    "journal": "Phys. Rev. X.",
+    "journalfull": "Physical review. X",
+    "labels": [
+      "3ab057fb-3f80-0645-b1fa-5dbe9a8539ac",
+      "79dd3598-fb19-06df-bdd6-a0d35289148e",
+      "55493528-8f00-0b13-b8bd-e364221584db",
+      "51d9f8a0-45d7-0ad4-b176-463847d05873"
+    ],
+    "labelsNamed": [
+      "inellastic tunneling",
+      "STM",
+      "TMDC",
+      "MoS2"
+    ],
+    "language": "en",
+    "number": "031030",
+    "owner": "265FD47EEE1511EA96879E649D9F4BF5",
+    "pages": "031030",
+    "pdf_restricted": 0,
+    "published": {
+      "year": "2025",
+      "month": "7",
+      "day": "29"
+    },
+    "publisher": "American Physical Society (APS)",
+    "pubtype": "PP_ARTICLE",
+    "sha1": "6645abf4b42116e8f82f0217fdf8db4811cf3bc4",
+    "subfolders": [
+      "All Papers/V"
+    ],
+    "title": "Inelastic tunneling into multipolaronic bound states in single-layer MoS2",
+    "url": [
+      "http://dx.doi.org/10.1103/l8lg-ny6m",
+      "https://journals.aps.org/prx/pdf/10.1103/l8lg-ny6m",
+      "https://link.aps.org/doi/10.1103/l8lg-ny6m"
+    ],
+    "volume": "15",
+    "xref": [
+      {
+        "type": "HasPreprint",
+        "doi": "10.48550/arXiv.2505.10972"
+      }
+    ]
+  },
+  {
+    "_id": "eea7cf7f-1d48-0975-b1d4-3a530fde4f25",
+    "abstract": "Superconductivity and the quantum Hall effect are conventionally viewed as mutually exclusive: the former is suppressed by magnetic fields, while the latter relies on them. Here, we report the surprising coexistence of these two phenomena in rhombohedral hexalayer graphene. In this system, a superconducting phase is not destroyed -- but instead stabilized -- by an out-of-plane magnetic field. Strikingly, this superconducting state coexists and competes with a sequence of quantum Hall states that appear at both integer and half-integer Landau level fillings. Both the superconducting and quantum Hall states exhibit sharply defined thermal transitions or crossovers, with nearly identical onset temperatures -- pointing to a shared underlying mechanism. Taken together, our observations uncover an unprecedented interplay between superconducting and topological phases, challenging conventional paradigms and opening a new frontier in condensed matter physics.",
+    "accessed": {
+      "year": "2025",
+      "month": "7",
+      "day": "30"
+    },
+    "archivePrefix": "arXiv",
+    "arxivid": "2507.22026",
+    "attachments": [
+      {
+        "_id": "b06c6df9-855c-4fb8-a6eb-40b1f3ba532c",
+        "mimeType": "application/pdf",
+        "pub_id": "eea7cf7f-1d48-0975-b1d4-3a530fde4f25",
+        "source_filename": "2507.22026v1.pdf",
+        "filename": "All Papers/2025/Ron et al. 2025 - A hierarchy of topological and superconducting states in rhombohedral hexalayer graphene.pdf",
+        "md5": "e4f546dfdb9b4c82937a53fd0b0d83e8",
+        "article_pdf": 1,
+        "filesize": 10957513,
+        "created": 1753887993.172,
+        "s3_md5": "e4f546dfdb9b4c82937a53fd0b0d83e8",
+        "gdrive_id": "1aEQeYUK48MD6Ltn3mzH5IUAxgdcltQGE"
+      }
+    ],
+    "author": [
+      {
+        "first": "Q Nguyen",
+        "last": "Ron",
+        "initials": "QN",
+        "formatted": "Ron QN"
+      },
+      {
+        "first": "Wu",
+        "last": "Hai-Tian",
+        "initials": "W",
+        "formatted": "Hai-Tian W"
+      },
+      {
+        "first": "Morissette",
+        "last": "Erin",
+        "initials": "M",
+        "formatted": "Erin M"
+      },
+      {
+        "first": "J Zhang",
+        "last": "Naiyuan",
+        "initials": "JZ",
+        "formatted": "Naiyuan JZ"
+      },
+      {
+        "first": "Qin",
+        "last": "Peiyu",
+        "initials": "Q",
+        "formatted": "Peiyu Q"
+      },
+      {
+        "first": "Watanabe",
+        "last": "Kenji",
+        "initials": "W",
+        "formatted": "Kenji W"
+      },
+      {
+        "first": "Taniguchi",
+        "last": "Takashi",
+        "initials": "T",
+        "formatted": "Takashi T"
+      },
+      {
+        "first": "W Hui",
+        "last": "Aaron",
+        "initials": "WH",
+        "formatted": "Aaron WH"
+      },
+      {
+        "first": "E Feldman",
+        "last": "Dima",
+        "initials": "EF",
+        "formatted": "Dima EF"
+      },
+      {
+        "first": "J I A",
+        "last": "Li",
+        "initials": "JI",
+        "formatted": "Li JI"
+      }
+    ],
+    "autoCleaned": 1,
+    "citekey": "Ron2025-vf",
+    "created": 1753887992.438,
+    "dup_sha1": "15164ac3efe147aa8a56c664926b8d07aafa6259",
+    "eprint": "2507.22026",
+    "folders": [],
+    "id_list": [
+      "sha1:1dfdbdf2dc1dfdb3bac3b8ceccfad5171721c006",
+      "dup_sha1:15164ac3efe147aa8a56c664926b8d07aafa6259",
+      "arxivid:2507.22026",
+      "url:http://arxiv.org/abs/2507.22026"
+    ],
+    "incomplete": 0,
+    "journal": "arXiv",
+    "labels": [
+      "208659b6-ce51-06a6-b78f-c2e439597c94",
+      "ed71c8a2-f914-0d49-b739-9be427f07254",
+      "3a65108d-30e5-0a41-9614-b3d2cf43d122",
+      "ceea3d7a-4f75-0852-b7dd-e0d9934e78d8",
+      "e662b7c7-a4e6-08df-a6ca-590b5c9f6e09",
+      "64c48a08-caf4-0100-9492-d2cfb2790538",
+      "7fa807ac-29f8-00a6-a821-b7051ede1646",
+      "4e4b90ec-b8ee-0284-ba6a-d2da2b00d285",
+      "f469e18d-6aaf-001d-9aa0-8c8bbe26e01b",
+      "e89d7b32-e1e4-05de-aa98-949de55da6df"
+    ],
+    "labelsNamed": [
+      "superconductivity",
+      "quantum Hall effect",
+      "rhombohedral graphite",
+      "transport",
+      "topology",
+      "topological insulator",
+      "QHE",
+      "FLG",
+      "BN",
+      "heterostructure"
+    ],
+    "owner": "265FD47EEE1511EA96879E649D9F4BF5",
+    "pdf_restricted": 0,
+    "primaryClass": "cond-mat.mes-hall",
+    "published": {
+      "year": "2025",
+      "month": "7",
+      "day": "29"
+    },
+    "pubtype": "PP_PREPRINT",
+    "sha1": "1dfdbdf2dc1dfdb3bac3b8ceccfad5171721c006",
+    "subfolders": [
+      "All Papers/R"
+    ],
+    "title": "A hierarchy of topological and superconducting states in rhombohedral hexalayer graphene",
+    "url": [
+      "http://arxiv.org/abs/2507.22026"
+    ]
+  }
+]
