@@ -79,7 +79,7 @@ def process_json(json_path: Path, template: str) -> None:
     for entry in data:
         output = replace_fields(template, entry)
         citekey = entry.get("citekey", "paper")
-        filename = f"{citekey[:-2]}.md"
+        filename = f"{citekey[:-3]}.md"
         (out_dir / filename).write_text(output, encoding="utf-8")
 
 
