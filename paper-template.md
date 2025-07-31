@@ -12,7 +12,7 @@ tags:
 ---
 
 MOC:: [[papers]]
-lead-author:: {{lead-author}}
+lead-author:: [[{{lead-author}}]]
 
 {{first-au-lastn}}, {{first-au-firstn}} _et al._ {{title}} _{{journal}}_ **{{volume}}**, {{number}} ({{year}}).
 
