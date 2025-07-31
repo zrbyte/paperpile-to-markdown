@@ -5,5 +5,9 @@
 # Directory containing this script
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-# Call the converter script with all selected JSON files
-python3 "$SCRIPT_DIR/pp2md.py" "$@"
+# Call the converter script once for each selected JSON file
+for json_path in "$@"; do
+    # Skip empty arguments which Automator might pass
+    [ -n "$json_path" ] || continue
+    python3 "$SCRIPT_DIR/pp2md.py" "$json_path"
+done
