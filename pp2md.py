@@ -20,8 +20,19 @@ import sys
 
 def load_json(path: Path) -> List[Dict[str, Any]]:
     """Load a JSON array from *path* and return it."""
-    with path.open("r", encoding="utf-8") as fh:
-        return json.load(fh)
+    if not path.suffix.lower() == '.json':
+        raise ValueError(f"Expected a JSON file, but got: {path.suffix or 'no extension'}")
+    
+    try:
+        with path.open("r", encoding="utf-8") as fh:
+            content = fh.read().strip()
+            if not content:
+                raise ValueError("JSON file is empty")
+            return json.loads(content)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Invalid JSON format in {path.name}: {e}")
+    except Exception as e:
+        raise ValueError(f"Error reading {path.name}: {e}")
 
 
 def load_template(path: Path) -> str:
@@ -101,8 +112,17 @@ def main(args: Iterable[str] | None = None) -> None:
     template = load_template(template_path)
 
     for path in json_paths:
-        if path.exists():
+        if not path.exists():
+            print(f"Error: File not found: {path}", file=sys.stderr)
+            continue
+        
+        try:
             process_json(path, template)
+            print(f"Successfully processed: {path}")
+        except ValueError as e:
+            print(f"Error processing {path}: {e}", file=sys.stderr)
+        except Exception as e:
+            print(f"Unexpected error processing {path}: {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":
