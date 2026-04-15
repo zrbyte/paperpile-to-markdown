@@ -13,9 +13,16 @@ be supplied to the script.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
 import sys
+
+
+def initials(first_name: str) -> str:
+    """Return period-separated initials, e.g. ``"Shaul Shalom" -> "S. S."``."""
+    tokens = re.findall(r"[A-Za-z]+", first_name or "")
+    return " ".join(f"{t[0].upper()}." for t in tokens if t)
 
 
 def load_json(path: Path) -> List[Dict[str, Any]]:
@@ -72,8 +79,8 @@ def replace_fields(template: str, entry: Dict[str, Any]) -> str:
         "{{year}}": published.get("year", ""),
         "{{tag}}": tags_yaml,
         "{{lead-author}}": f"{last_author.get('first', '')} {last_author.get('last', '')}",
-        "{{first-au-lastn}}": first_author.get("first", ""),
-        "{{first-au-firstn}}": first_author.get("last", ""),
+        "{{first-au-lastn}}": first_author.get("last", ""),
+        "{{first-au-firstn}}": initials(first_author.get("first", "")),
         "{{volume}}": entry.get("volume", ""),
         "{{number}}": entry.get("number", ""),
     }
